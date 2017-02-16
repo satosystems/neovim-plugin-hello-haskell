@@ -1,22 +1,22 @@
 name:                neovim-plugin-hello-haskell
-version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/neovim-plugin-hello-haskell#readme
+version:             0.1.0
+homepage:            https://github.com/satosystems/neovim-plugin-hello-haskell#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2017 Author name here
-category:            Web
+author:              Satoshi Ogata
+maintainer:          satosystems@gmail.com
+copyright:           2017 Satoshi Ogata
+category:            Example
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Hello
+                     , Hello.Plugin
   build-depends:       base >= 4.7 && < 5
+                     , nvim-hs
   default-language:    Haskell2010
 
 executable neovim-plugin-hello-haskell-exe
@@ -25,6 +25,7 @@ executable neovim-plugin-hello-haskell-exe
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
                      , neovim-plugin-hello-haskell
+                     , nvim-hs
   default-language:    Haskell2010
 
 test-suite neovim-plugin-hello-haskell-test
@@ -38,4 +39,5 @@ test-suite neovim-plugin-hello-haskell-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/neovim-plugin-hello-haskell
+  location: https://github.com/satosystems/neovim-plugin-hello-haskell
+
