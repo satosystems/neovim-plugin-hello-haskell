@@ -1,6 +1,6 @@
 # neovim-plugin-hello-haskell
 
-[![Build Status](https://travis-ci.org/satosystems/neovim-plugin-hello-haskell.svg?branch=master)](https://travis-ci.org/satosystems/neovim-plugin-hello-haskell)
+[![Build Status](https://travis-ci.org/satosystems/neovim-plugin-hello-haskell.svg?branch=develop)](https://travis-ci.org/satosystems/neovim-plugin-hello-haskell)
 
 This is a very simple plugin of [Neovim](https://neovim.io/)
 written by [Haskell](https://www.haskell.org/) using
