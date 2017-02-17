@@ -1,12 +1,7 @@
 #!/bin/bash
 
 plugin_name=neovim-plugin-hello-haskell
-plugin_dir="$HOME/Documents/git/$plugin_name"
-
-if [ ! -d $plugin_dir ]; then
-  echo "You need to change 'plugin_dir' according to your environment."
-  exit 1
-fi
+plugin_dir="$(cd $(dirname $0) && pwd)"
 
 pushd $plugin_dir > /dev/null
 
